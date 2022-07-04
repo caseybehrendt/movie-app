@@ -6,7 +6,7 @@ class ActorController < ApplicationController
   end
 
   def "actor"
-    first_actor = actor.first
+    first_actor = Actor.first
     render json: actor.as_json
   end
   
