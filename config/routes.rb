@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "/movies/:id" => "movies#show"
 
   patch "/actors/:id" => "actors#update"
-  patsh "/movies/:id" => "movies#update"
+  patch "/movies/:id" => "movies#update"
 
   delete "/actors/:id" => "actors#destroy"
   delete "/movies/:id" => "movies#destroy"
