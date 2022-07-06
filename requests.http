@@ -1,30 +1,54 @@
 ### Actor Index
-
+GET http://localhost:3000/actors.json
 
 ### Movie Index
-
+GET http://localhost:3000/movies.json
 
 ### Actor Show
-
+GET http://localhost:3000/actor/3.json
 
 ### Movie Show
-
+GET http://localhost:3000/movie/3.json
 
 ### Actor Create
+POST http://localhost:3000/actor.json
+Content-Type: application/json
 
+{
+"first_name": "first name",
+"last_name": "last name",
+"known_for": "known for"
+}
 
 ### Movie Create
+GET http://localhost:3000/movie.json
+Content-Type: application/json
 
+{
+  "title": "title",
+  "year": "year",
+  "plot": "plot"
+}
 
 ### Actor Update
+PATCH http://localhost:3000/actor/2.json
+Content-Type: application/json
 
+{
+"first_name": "Test Name"
+
+}
 
 ### Movie Update
+PATCH http://localhost:3000/movie/1.json
 
+{
+  "title": "Test Title"  
+}
 
 ### Actor Delete
-
+DELETE http://localhost:3000/actor/3.json
 
 ### Movie Delete
-
+DELETE http://localhost:3000/movie/3.json
 
