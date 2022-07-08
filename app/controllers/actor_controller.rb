@@ -4,13 +4,13 @@ class ActorController < ApplicationController
     render json: actors.as_json
   end
 
-  def actor
-    first_actor = Actor.first
-    render json: actor.as_json
-  end
+  # def actor
+  #   first_actor = Actor.first
+  #   render json: actors.as_json
+  # end
 
   def show
-    actor = Actor.find_by(id: params["id"])
+    actor = Actor.find_by(id: params[:id])
     render json: actor.as_json
   end
 
@@ -20,6 +20,7 @@ class ActorController < ApplicationController
       last_name: params["last_name"],
       known_for: params["known_for"],
     )
+    actor.save
   end
 
   def update
