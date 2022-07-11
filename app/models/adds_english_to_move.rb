@@ -1,0 +1,2 @@
+class AddsEnglishToMove < ApplicationRecord
+end
