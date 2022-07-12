@@ -8,7 +8,7 @@ GET http://localhost:3000/movies.json
 GET http://localhost:3000/actors/1.json
 
 ### Movie Show
-GET http://localhost:3000/movie/3.json
+GET http://localhost:3000/movies/3.json
 
 ### Actor Create
 POST http://localhost:3000/actor.json
