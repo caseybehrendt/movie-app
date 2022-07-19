@@ -1,3 +1,5 @@
 class ProductSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :title, :year, :plot, :english
+
+  has_many :genres
 end
