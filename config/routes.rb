@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'movie_genres/movie_id'
+  get 'movie_genres/genre_id'
   get "/actors" => "actor#actors"
 
   get "/actors" => "actor#first_actor"

@@ -52,3 +52,11 @@ DELETE http://localhost:3000/actor/3.json
 ### Movie Delete
 DELETE http://localhost:3000/movie/3.json
 
+### Movie_Genre Create
+POST http://localhost:3000/movie_genre.json
+Content-Type: application/json
+
+{
+"movie_id": 1,
+"genre_id": 2
+}
